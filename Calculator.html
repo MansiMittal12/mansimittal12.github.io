@@ -1,0 +1,85 @@
+<!DOCTYPE html>  
+<html lang = "en">  
+<head>  
+<title> JavaScript Calculator </title>  
+<style>  
+h1 
+{  
+    text-align: center;  
+    padding: 15px;   
+    color: darkblue;  
+    }    
+#clear
+{  
+width: 245px; 
+border: 1px solid black;  
+    border-radius: 3px;  
+    padding: 15px;  
+    background-color: red;  
+}  
+.formstyle  
+{  
+width: 250px;  
+height: 250px;    
+border: 10px darkblue;  
+margin: auto;
+border-radius: 5px;  
+padding: 15px;  
+box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}  
+input  
+{  
+width: 55px;  
+background-color: lightblue;  
+color: black;  
+border: 1px solid black;  
+    border-radius: 5px;  
+    padding: 5px;  
+    margin: 2px;  
+    font-size: 15px;  
+box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+}    
+#calc
+{  
+width: 213px;  
+background-color: skyblue;
+border: 0.5px solid black;  
+    border-radius: 3px;  
+    padding: 15px;  
+    margin: 2px;  
+}  
+</style>  
+</head>  
+
+<body>  
+<h1> Calculator</h1>  
+<div class= "formstyle">  
+<form name = "Calculator">  
+   <!-- input box  -->  <input id = "calc" type ="text" name = "func"> 
+   <br> 
+  <input type = "button" value = "1" onclick = "Calculator.func.value += '1' ">  
+  <input type = "button" value = "2" onclick = "Calculator.func.value += '2' ">  
+  <input type = "button" value = "3" onclick = "Calculator.func.value += '3' ">  
+   <input type = "button" value = "+" onclick = "Calculator.func.value += '+' ">  
+  <br>
+  <input type = "button" value = "4" onclick = "Calculator.func.value += '4' ">  
+  <input type = "button" value = "5" onclick = "Calculator.func.value += '5' ">  
+  <input type = "button" value = "6" onclick = "Calculator.func.value += '6' ">  
+  <input type = "button" value = "-" onclick = "Calculator.func.value += '-' ">  
+  <br>
+  <input type = "button" value = "7" onclick = "Calculator.func.value += '7' ">  
+  <input type = "button" value = "8" onclick = "Calculator.func.value += '8' ">  
+  <input type = "button" value = "9" onclick = "Calculator.func.value += '9' ">  
+  <input type = "button" value = "*" onclick = "Calculator.func.value += '*' ">  
+  <br>
+  <input type = "button" value = "0" onclick = "Calculator.func.value += '0' ">  
+  <input type = "button" value = "." onclick = "Calculator.func.value += '.' "> 
+  <input type = "button" value = "=" onclick = "Calculator.func.value = eval(Calculator.func.value) ">  
+  <input type = "button" value = "/" onclick = "Calculator.func.value += '/' ">  
+  <br> 
+  <input type = "button" value = "AC" onclick = "Calculator.func.value = ' ' " id= "clear" >  
+  <br>       
+</form>  
+</div>  
+</body>  
+</html>
