@@ -1,4 +1,4 @@
 # mansimittal12.github.io
-Form
-Calculator
+Form.html
+Calculator.html
 Portfolio (using grid & parallax)
